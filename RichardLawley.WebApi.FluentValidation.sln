@@ -1,10 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RichardLawley.WebApi.FluentValidation", "src\RichardLawley.WebApi.FluentValidation\RichardLawley.WebApi.FluentValidation.csproj", "{EB58D9D3-040D-4D53-8928-4E5063B0E570}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RichardLawley.WebApi.FluentValidation.Tests", "src\RichardLawley.WebApi.FluentValidation.Tests\RichardLawley.WebApi.FluentValidation.Tests.csproj", "{F326FA2E-C2E5-4AA4-873D-C87E4F17BF9F}"
-EndProject
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{97C16D73-9E08-4CCB-8F89-4ADD721CAE23}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.Config = .nuget\NuGet.Config
@@ -12,6 +10,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{97C16D
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 		.nuget\packages.config = .nuget\packages.config
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RichardLawley.WebApi.FluentValidation", "src\RichardLawley.WebApi.FluentValidation\RichardLawley.WebApi.FluentValidation.csproj", "{EB58D9D3-040D-4D53-8928-4E5063B0E570}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RichardLawley.WebApi.FluentValidation.Tests", "src\RichardLawley.WebApi.FluentValidation.Tests\RichardLawley.WebApi.FluentValidation.Tests.csproj", "{F326FA2E-C2E5-4AA4-873D-C87E4F17BF9F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RichardLawley.WebApi.FluentValidation.Demo", "src\RichardLawley.WebApi.FluentValidation.Demo\RichardLawley.WebApi.FluentValidation.Demo.csproj", "{D482ADC3-B761-41A7-95EC-D122FBDB5073}"
 EndProject

@@ -101,22 +101,22 @@ namespace RichardLawley.WebApi.FluentValidation
                 ValidationResult result = validator.Validate(context);
                 foreach (var error in result.Errors)
                 {
-                    if (key == null)
-                    {
-                        key = validationContext.RootPrefix;
-                        foreach (IKeyBuilder keyBuilder in validationContext.KeyBuilders.Reverse())
-                        {
-                            key = keyBuilder.AppendTo(key);
-                        }
+                    //if (key == null)
+                    //{
+                    //    key = validationContext.RootPrefix;
+                    //    foreach (IKeyBuilder keyBuilder in validationContext.KeyBuilders.Reverse())
+                    //    {
+                    //        key = keyBuilder.AppendTo(key);
+                    //    }
 
-                        // Avoid adding model errors if the model state already contains model errors for that key
-                        // We can't perform this check earlier because we compute the key string only when we detect an error
-                        if (!validationContext.ModelState.IsValidField(key))
-                        {
-                            return false;
-                        }
-                    }
-                    validationContext.ModelState.AddModelError(key, JsonConvert.SerializeObject(error));
+                    //    // Avoid adding model errors if the model state already contains model errors for that key
+                    //    // We can't perform this check earlier because we compute the key string only when we detect an error
+                    //    if (!validationContext.ModelState.IsValidField(key))
+                    //    {
+                    //        return false;
+                    //    }
+                    //}
+                    validationContext.ModelState.AddModelError(error.PropertyName, error.ErrorMessage);
                     isValid = false;
                 }
             }
